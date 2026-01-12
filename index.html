@@ -470,31 +470,26 @@
                 </div>
               </div>
 
-              {/* Footer */}
+            {/* Footer */}
               <footer className="bg-white border-t border-slate-200">
                 <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
                   <div className="flex flex-col items-center justify-center space-y-6">
-                     <div className="flex items-center gap-3">
-                     <div className="text-center space-y-1">
-                         <p className="text-sm text-slate-600 font-medium">
+                      
+                      {/* Sección de Créditos */}
+                      <div className="text-center space-y-1">
+                          <p className="text-sm text-slate-600 font-medium">
                             Desarrollado por Ana E. Ceballos para el espacio curricular de Lengua Castellana I y II.
-                         </p>
-                     </div>
+                          </p>
+                      </div>
 
-                     <p className="text-center text-[10px] text-slate-400 mt-4 border-t border-slate-100 pt-4 w-full max-w-xs mx-auto">
+                      {/* Sección de Copyright */}
+                      <p className="text-center text-[10px] text-slate-400 mt-4 border-t border-slate-100 pt-4 w-full max-w-xs mx-auto">
                         &copy; {new Date().getFullYear()} Tutor GEMM. Lic. Ana E. Ceballos. Todos los derechos reservados.
-                     </p>
+                      </p>
+                      
                   </div>
-                </div>
+                </div> {/* <--- ESTE DIV FALTABA (Cierra el contenedor max-w-7xl) */}
               </footer>
             </div>
           );
         };
-
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<TutorLanding />);
-    </script>
-</body>
-
-</html>
-
